@@ -17,7 +17,11 @@ import {
   ExternalLink,
   AlertCircle,
   Sparkles,
-  MapPin
+  MapPin,
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube
 } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import emailjs from '@emailjs/browser';
@@ -590,18 +594,52 @@ const Contact = () => {
       {/* Footer */}
       <footer className="relative z-10 border-t border-white/10 bg-black/20 backdrop-blur-sm mt-20">
         <div className="container mx-auto px-6 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {/* Brand Column */}
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Store className="h-6 w-6 text-orange-500" />
                 <span className="text-xl font-bold bg-gradient-to-r from-white via-orange-100 to-orange-400 bg-clip-text text-transparent">
-                  RetailPro
+                  Retail Marketing Pro
                 </span>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Complete retail management platform with mobile POS integration, multi-location support, and real-time analytics.
               </p>
+              <div className="flex space-x-4">
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61578900585501" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group"
+                >
+                  <Facebook className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
+                </a>
+                <a 
+                  href="https://x.com/IndiaRetailPro" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group"
+                >
+                  <Twitter className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/indiaretailpro/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group"
+                >
+                  <Instagram className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
+                </a>
+                <a 
+                  href="https://www.youtube.com/@RetailMARKETINGPRO" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group"
+                >
+                  <Youtube className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
+                </a>
+              </div>
             </div>
 
             {/* Quick Links */}
@@ -647,6 +685,31 @@ const Contact = () => {
               </ul>
             </div>
 
+            {/* Legal */}
+            <div>
+              <h3 className="text-white font-bold mb-4">Legal</h3>
+              <ul className="space-y-3">
+                <li>
+                  <button 
+                    onClick={() => navigate('/privacy')}
+                    className="text-gray-400 hover:text-orange-400 transition-colors text-sm flex items-center space-x-2 group"
+                  >
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-orange-400 transition-all duration-300" />
+                    <span>Privacy Policy</span>
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => navigate('/terms')}
+                    className="text-gray-400 hover:text-orange-400 transition-colors text-sm flex items-center space-x-2 group"
+                  >
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-orange-400 transition-all duration-300" />
+                    <span>Terms of Service</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
             {/* Contact Info */}
             <div>
               <h3 className="text-white font-bold mb-4">Contact Us</h3>
@@ -672,17 +735,17 @@ const Contact = () => {
           {/* Bottom Bar */}
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} RetailPro. All rights reserved.
+              © {new Date().getFullYear()} Retail Marketing Pro. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <button 
-                onClick={() => navigate('/contact')}
+                onClick={() => navigate('/privacy')}
                 className="text-gray-400 hover:text-orange-400 transition-colors"
               >
                 Privacy Policy
               </button>
               <button 
-                onClick={() => navigate('/contact')}
+                onClick={() => navigate('/terms')}
                 className="text-gray-400 hover:text-orange-400 transition-colors"
               >
                 Terms of Service

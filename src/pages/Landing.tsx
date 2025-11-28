@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Store, Building2, BarChart3, Smartphone, MapPin, TrendingUp, CreditCard, ShieldCheck, Users, Sparkles, Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Store, Building2, BarChart3, Smartphone, MapPin, TrendingUp, CreditCard, ShieldCheck, Users, Sparkles, Mail, Phone, Facebook, Twitter, Linkedin, Instagram, Youtube } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Landing = () => {
@@ -318,24 +318,44 @@ const Landing = () => {
               <div className="flex items-center space-x-3">
                 <Store className="h-6 w-6 text-orange-500" />
                 <span className="text-xl font-bold bg-gradient-to-r from-white via-orange-100 to-orange-400 bg-clip-text text-transparent">
-                  RetailPro
+                  Retail Marketing Pro
                 </span>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Complete retail management platform with mobile POS integration, multi-location support, and real-time analytics.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group">
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61578900585501" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group"
+                >
                   <Facebook className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group">
+                <a 
+                  href="https://x.com/IndiaRetailPro" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group"
+                >
                   <Twitter className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group">
-                  <Linkedin className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group">
+                <a 
+                  href="https://www.instagram.com/indiaretailpro/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group"
+                >
                   <Instagram className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
+                </a>
+                <a 
+                  href="https://www.youtube.com/@RetailMARKETINGPRO" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-gray-800/50 border border-white/10 flex items-center justify-center hover:bg-orange-500/20 hover:border-orange-500/50 transition-all duration-300 group"
+                >
+                  <Youtube className="h-5 w-5 text-gray-400 group-hover:text-orange-400 transition-colors" />
                 </a>
               </div>
             </div>
@@ -429,17 +449,17 @@ const Landing = () => {
           {/* Bottom Bar */}
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} RetailPro. All rights reserved.
+              © {new Date().getFullYear()} Retail Marketing Pro. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <button 
-                onClick={() => navigate('/contact')}
+                onClick={() => navigate('/privacy')}
                 className="text-gray-400 hover:text-orange-400 transition-colors"
               >
                 Privacy Policy
               </button>
               <button 
-                onClick={() => navigate('/contact')}
+                onClick={() => navigate('/terms')}
                 className="text-gray-400 hover:text-orange-400 transition-colors"
               >
                 Terms of Service

@@ -14,6 +14,8 @@ import { Login } from "./components/auth/Login";
 import AppPage from "./pages/AppPage";
 import { AttendancePage } from "./pages/AttendancePage";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 
 const queryClient = new QueryClient();
 
@@ -94,6 +96,8 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/app" element={<AppPage />} />
             <Route path="/attendance" element={<AttendancePage />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsConditions />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
