@@ -16,6 +16,9 @@ import { AttendancePage } from "./pages/AttendancePage";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
+import RefundCancellationPolicy from "./pages/RefundCancellationPolicy";
+import Disclaimer from "./pages/Disclaimer";
+import CookieNotice from "./pages/CookieNotice";
 
 const queryClient = new QueryClient();
 
@@ -98,6 +101,9 @@ const App = () => {
             <Route path="/attendance" element={<AttendancePage />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsConditions />} />
+            <Route path="/refund" element={<RefundCancellationPolicy />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
+            <Route path="/cookies" element={<CookieNotice />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

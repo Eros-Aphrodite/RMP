@@ -707,6 +707,33 @@ const Contact = () => {
                     <span>Terms of Service</span>
                   </button>
                 </li>
+                <li>
+                  <button 
+                    onClick={() => navigate('/refund')}
+                    className="text-gray-400 hover:text-orange-400 transition-colors text-sm flex items-center space-x-2 group"
+                  >
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-orange-400 transition-all duration-300" />
+                    <span>Refund & Cancellation Policy</span>
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => navigate('/disclaimer')}
+                    className="text-gray-400 hover:text-orange-400 transition-colors text-sm flex items-center space-x-2 group"
+                  >
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-orange-400 transition-all duration-300" />
+                    <span>Disclaimer</span>
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => navigate('/cookies')}
+                    className="text-gray-400 hover:text-orange-400 transition-colors text-sm flex items-center space-x-2 group"
+                  >
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-orange-400 transition-all duration-300" />
+                    <span>Cookie Notice</span>
+                  </button>
+                </li>
               </ul>
             </div>
 
@@ -722,7 +749,7 @@ const Contact = () => {
                 </li>
                 <li className="flex items-start space-x-3">
                   <Phone className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-400 text-sm">+91 98765 43210</span>
+                  <span className="text-gray-400 text-sm">+91 8910921128</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
@@ -749,6 +776,24 @@ const Contact = () => {
                 className="text-gray-400 hover:text-orange-400 transition-colors"
               >
                 Terms of Service
+              </button>
+              <button 
+                onClick={() => navigate('/refund')}
+                className="text-gray-400 hover:text-orange-400 transition-colors"
+              >
+                Refund & Cancellation Policy
+              </button>
+              <button 
+                onClick={() => navigate('/disclaimer')}
+                className="text-gray-400 hover:text-orange-400 transition-colors"
+              >
+                Disclaimer
+              </button>
+              <button 
+                onClick={() => navigate('/cookies')}
+                className="text-gray-400 hover:text-orange-400 transition-colors"
+              >
+                Cookie Notice
               </button>
             </div>
           </div>

@@ -436,7 +436,7 @@ const Landing = () => {
                 </li>
                 <li className="flex items-start space-x-3">
                   <Phone className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-400 text-sm">+91 98765 43210</span>
+                  <span className="text-gray-400 text-sm">+91 8910921128</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
@@ -463,6 +463,24 @@ const Landing = () => {
                 className="text-gray-400 hover:text-orange-400 transition-colors"
               >
                 Terms of Service
+              </button>
+              <button 
+                onClick={() => navigate('/refund')}
+                className="text-gray-400 hover:text-orange-400 transition-colors"
+              >
+                Refund & Cancellation Policy
+              </button>
+              <button 
+                onClick={() => navigate('/disclaimer')}
+                className="text-gray-400 hover:text-orange-400 transition-colors"
+              >
+                Disclaimer
+              </button>
+              <button 
+                onClick={() => navigate('/cookies')}
+                className="text-gray-400 hover:text-orange-400 transition-colors"
+              >
+                Cookie Notice
               </button>
             </div>
           </div>

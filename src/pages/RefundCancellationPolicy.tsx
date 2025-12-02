@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Store, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube } from "lucide-react";
 
-const TermsConditions = () => {
+const RefundCancellationPolicy = () => {
   const navigate = useNavigate();
 
   return (
@@ -31,93 +31,32 @@ const TermsConditions = () => {
         <Card className="bg-gradient-to-br from-gray-800/90 via-gray-800/80 to-gray-900/90 border border-white/10 backdrop-blur-xl">
           <CardContent className="p-8 md:p-12">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 bg-gradient-to-r from-white via-orange-100 to-orange-300 bg-clip-text text-transparent">
-              Terms & Conditions – RMP
+              Refund & Cancellation Policy – RMP
             </h1>
             <p className="text-gray-400 mb-8">
-              Updated: 2025.12.01
+              2025.12.01
             </p>
 
             <div className="prose prose-invert max-w-none space-y-6 text-gray-300 leading-relaxed">
-              <p className="text-lg">
-                These Terms govern your use of RMP (web and mobile apps, free and paid plans).
-              </p>
-
               <section className="space-y-4">
-                <h2 className="text-2xl font-bold text-white mt-8 mb-4">Eligibility</h2>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Users must be 18+ and legally capable</li>
-                  <li>Accurate business and contact information required</li>
+                  <li>Free plan: No refunds required</li>
+                  <li>Paid plan: Refunds only in limited scenarios (duplicate payment, technical failure)</li>
+                  <li>Refunds include third-party processing fees</li>
+                  <li>Maximum refundable or claimable amount: INR 100</li>
+                  <li>Subscription remains active until term end for cancellations</li>
                 </ul>
               </section>
 
-              <section className="space-y-4">
-                <h2 className="text-2xl font-bold text-white mt-8 mb-4">Service Description</h2>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>RMP provides inventory, billing, and business management tools</li>
-                  <li>Free Plan: Limited access to features, offline storage supported</li>
-                  <li>Paid Plan: Full access, real-time sync, cloud storage</li>
-                  <li>Offline mode: Local data stored until connected for real-time sync</li>
-                </ul>
-              </section>
-
-              <section className="space-y-4">
-                <h2 className="text-2xl font-bold text-white mt-8 mb-4">User Responsibilities</h2>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Maintain accurate data</li>
-                  <li>Secure devices and login credentials</li>
-                  <li>Backup local data as needed</li>
-                  <li>Use services for lawful business purposes only</li>
-                </ul>
-              </section>
-
-              <section className="space-y-4">
-                <h2 className="text-2xl font-bold text-white mt-8 mb-4">Subscription & Payment</h2>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Free plan: No fees, limited features</li>
-                  <li>Paid plan: Annual subscription; no monthly fees</li>
-                  <li>Payment gateway charges are non-refundable</li>
-                </ul>
-              </section>
-
-              <section className="space-y-4">
-                <h2 className="text-2xl font-bold text-white mt-8 mb-4">Refund & Cancellation</h2>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Refunds only for duplicate payments, technical failures, or reporting mistakes within 24 hours</li>
-                  <li>Refunds include unavoidable third-party fees</li>
-                  <li>Maximum claimable amount: INR 100</li>
-                </ul>
-              </section>
-
-              <section className="space-y-4">
-                <h2 className="text-2xl font-bold text-white mt-8 mb-4">Prohibited Activities</h2>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Unauthorized access, hacking, misuse</li>
-                  <li>Reverse-engineering the app</li>
-                  <li>Illegal use or misrepresentation</li>
-                </ul>
-              </section>
-
-              <section className="space-y-4">
-                <h2 className="text-2xl font-bold text-white mt-8 mb-4">Intellectual Property</h2>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>All software, content, and branding owned by RetailMarketingPro</li>
-                  <li>Users receive a non-transferable, non-exclusive license</li>
-                </ul>
-              </section>
-
-              <section className="space-y-4">
-                <h2 className="text-2xl font-bold text-white mt-8 mb-4">Liability</h2>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Services provided "as-is"</li>
-                  <li>Not liable for data loss, business loss, or technical failures</li>
-                  <li>Maximum liability: INR 100</li>
-                </ul>
-              </section>
-
-              <section className="space-y-4">
-                <h2 className="text-2xl font-bold text-white mt-8 mb-4">Governing Law</h2>
-                <p>
-                  Laws of India; disputes resolved in Indian courts
+              <section className="space-y-4 mt-8">
+                <p className="text-lg">
+                  <strong className="text-white">Contact:</strong>{" "}
+                  <a 
+                    href="mailto:retailmarketingpro1.0@gmail.com" 
+                    className="text-orange-400 hover:text-orange-300 transition-colors underline"
+                  >
+                    retailmarketingpro1.0@gmail.com
+                  </a>
                 </p>
               </section>
             </div>
@@ -337,5 +276,5 @@ const TermsConditions = () => {
   );
 };
 
-export default TermsConditions;
+export default RefundCancellationPolicy;
 
